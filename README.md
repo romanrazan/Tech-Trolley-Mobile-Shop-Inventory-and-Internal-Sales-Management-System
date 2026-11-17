@@ -7,7 +7,7 @@
 
   A full-stack, role-based platform for managing mobile-shop inventory, purchases, sales, payments, customers, suppliers, accounts, expenses, and business reports.
 
-  [Live Application](https://tech-trolley.vercel.app) · [API Documentation](https://tech-trolley-api.onrender.com/api) · [Report an Issue](https://github.com/asadbinjafor/Tech-Trolley-Mobile-Shop-Inventory-and-Internal-Sales-Management-System/issues)
+  [Live Application](https://tech-trolley.vercel.app) · [API Documentation](https://tech-trolley-api.onrender.com/api) · [Report an Issue](https://github.com/romanrazan/Tech-Trolley-Mobile-Shop-Inventory-and-Internal-Sales-Management-System/issues)
 </div>
 
 ---
@@ -17,6 +17,12 @@
 Tech Trolley centralizes the daily operational workflows of a mobile-device retail business. It provides separate permissions for owners, managers, and salespersons while keeping product, IMEI, purchase, sale, payment, due, and expense records connected through a PostgreSQL database.
 
 The application is being developed as an academic full-stack project at American International University-Bangladesh. Development started in August 2026 and is ongoing.
+
+## Application Screenshot
+
+The live sign-in screen connects users to the role-aware operational workspace.
+
+![Tech Trolley sign-in screen](docs/screenshots/tech-trolley-login.png)
 
 ## Key Features
 
@@ -58,6 +64,19 @@ Backend guards remain the source of truth for authorization. The frontend also h
 | Database | PostgreSQL, TypeORM |
 | Testing | Jest, ts-jest |
 | Deployment | Vercel, Render, Supabase, GitHub |
+
+## Important Dependencies
+
+| Dependency | Purpose |
+| --- | --- |
+| Next.js and React | App Router pages, reusable components, and production frontend builds |
+| NestJS | Modular REST API, dependency injection, guards, validation, and Swagger integration |
+| TypeORM and `pg` | Entity mapping and PostgreSQL access for connected business records |
+| Passport JWT and bcrypt | Token authentication and password hashing |
+| React Hook Form and Zod | Typed form state and client-side validation |
+| Axios, Recharts, Lucide, and Sonner | API calls, reporting charts, interface icons, and user feedback |
+
+Next.js and NestJS keep the frontend and backend responsibilities clear while sharing TypeScript across both applications. PostgreSQL and TypeORM suit the relational inventory, IMEI, purchase, sale, payment, and account workflows, while Swagger makes the REST contract inspectable.
 
 ## Architecture
 
@@ -113,7 +132,7 @@ Tech-Trolley-Mobile-Shop-Inventory-and-Internal-Sales-Management-System/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/asadbinjafor/Tech-Trolley-Mobile-Shop-Inventory-and-Internal-Sales-Management-System.git
+git clone https://github.com/romanrazan/Tech-Trolley-Mobile-Shop-Inventory-and-Internal-Sales-Management-System.git
 cd Tech-Trolley-Mobile-Shop-Inventory-and-Internal-Sales-Management-System
 ```
 
@@ -218,10 +237,12 @@ Run frontend checks:
 
 ```bash
 cd tech-trolley-frontend
-npm run typecheck
 npm run lint
 npm run build
+npm run typecheck
 ```
+
+The first production build generates Next.js route and layout types used by the standalone type-check command.
 
 ## Deployment
 
