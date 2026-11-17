@@ -249,7 +249,7 @@ This project is **ongoing**. Planned work includes continued security hardening,
 
 ## Author
 
-Developed and maintained by [Asad Bin Jafor](https://github.com/asadbinjafor) as part of an academic group project at American International University-Bangladesh.
+Developed and maintained by [Roman Sheikh Razan](https://github.com/romanrazan) as part of an academic group project at American International University-Bangladesh.
 
 ## Acknowledgements
 
